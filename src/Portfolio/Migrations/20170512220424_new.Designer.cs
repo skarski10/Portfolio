@@ -8,8 +8,8 @@ using Portfolio.Models;
 namespace Portfolio.Migrations
 {
     [DbContext(typeof(PortfolioContext))]
-    [Migration("20170512175156_Users")]
-    partial class Users
+    [Migration("20170512220424_new")]
+    partial class @new
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -122,6 +122,22 @@ namespace Portfolio.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Portfolio.Models.Project", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("html_url");
+
+                    b.Property<string>("name");
+
+                    b.Property<int>("stargazers_count");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Projects");
                 });
 
             modelBuilder.Entity("Portfolio.Models.User", b =>

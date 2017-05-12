@@ -1,0 +1,16 @@
+﻿@{
+}
+@model IEnumerable<Portfolio.Models.Project>
+
+@foreach (var project in Model)
+{
+    if (project.stargazers_count > 0)
+    {
+        <div class="projects">
+            <h3>@project.name</h3>
+            <h5>@project.html_url</h5>
+        </div>
+
+    }
+
+}

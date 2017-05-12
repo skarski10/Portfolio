@@ -123,6 +123,22 @@ namespace Portfolio.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("Portfolio.Models.Project", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("html_url");
+
+                    b.Property<string>("name");
+
+                    b.Property<int>("stargazers_count");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Projects");
+                });
+
             modelBuilder.Entity("Portfolio.Models.User", b =>
                 {
                     b.Property<string>("Id");

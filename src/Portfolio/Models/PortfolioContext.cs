@@ -9,6 +9,7 @@ namespace Portfolio.Models
 {
     public class PortfolioContext : IdentityDbContext<User>
     {
+        public virtual DbSet<Project> Projects { get; set; }
         public PortfolioContext()
         {
         }
