@@ -8,44 +8,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="~/js/JavaScript.js"></script>
+    <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="~/css/StyleSheet.css" />
 </head>
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li>
-                    @Html.ActionLink("About", "Index", "About")
-                </li>
-                <li>
-                    @Html.ActionLink("About Me", "Index", "Home")
-                </li>
-                @if (User.Identity.IsAuthenticated)
-                {
+    <div id="header-wrap">
+        <div id="header" class="row">
+            ::before
+            <span id="logo">@Html.ActionLink("Kory Skarbek", "Index", "Home")</span>
+            <div id="nav">
+                <ul class="navbar-nav mr-auto">
                     <li>
-                        @Html.ActionLink("Worker Dashboard", "Index", "Workers")
+                        @Html.ActionLink("About", "AboutMe", "Home")
                     </li>
-                }
 
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <li>
-                        @Html.ActionLink("Log Out", "LogOff", "Account")
-                    </li>
-                }
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            @Html.ActionLink("Log Out", "LogOff", "Account")
+                        </li>
+                    }
+                    else
+                    {
+                        <p>@Html.ActionLink("Register", "Register", "Account")</p>
+                        <p>@Html.ActionLink("Login", "Login", "Account")</p>
+                    }
+                </ul>
+            </div>
+            ::after
         </div>
-    </nav>
+    </div>
     <div>
         @RenderBody()
     </div>

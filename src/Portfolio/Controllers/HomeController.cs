@@ -12,5 +12,9 @@ namespace Portfolio.Controllers
         {
             return View();
         }
+        public IActionResult AboutMe()
+        {
+            return View();
+        }
     }
 }
