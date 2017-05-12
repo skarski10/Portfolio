@@ -1,4 +1,6 @@
 ﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Projects";
 }
 @model IEnumerable<Portfolio.Models.Project>
 
@@ -8,7 +10,7 @@
     {
         <div class="projects">
             <h3>@project.name</h3>
-            <h5>@project.html_url</h5>
+            <h5><a href=@project.html_url>@project.html_url</a></h5>
         </div>
 
     }

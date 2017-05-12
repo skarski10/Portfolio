@@ -1,17 +1,46 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = "About Me";
+    ViewBag.Title = "About";
 }
 <body id="about-body">
    <div class="container">
-    <div class="row">
+    <div class="row" id="about">
         <p id="about-heading">About Me:</p>
-        <p>
-            I am currently a junior level program developer studying at Epicodus code school in Seattle. At Epicodus, I learned C# with .NET framework and JavaScript with Angular. I am open to learning any language and enjoy the challenge it provides. I love programming because of the challenges it presents and the different solutions there can be so solving them.
-        </p>
+        <div class="info row">
+            <div class="col-md-6">
+                <div class="col-md-6">
+                    <p>
+                        I am currently a junior level program developer studying at Epicodus code school in Seattle. At Epicodus, I learned C# with .NET framework and JavaScript with Angular. I am open to learning any language and enjoy the challenge it provides. I love programming because of the challenges it presents and the different solutions there can be so solving them.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-
+       <hr />
+    <div class="row info">
+        <div class="col-md-6" id="Education">
+            <h3>Education:</h3>
+            <h4>Epicodus, Seattle, WA</h4>
+            <p>
+                <em>2017</em><br />
+                Six month vocational school for programming
+            </p>
+            <h4>University of Redlands, Redlands, CA - BS - Business Administration</h4>
+            <p>
+                <em>2013</em>
+            </p>               
+        </div>
+        <div class="col-md-6" id="skills">
+            <h3>Skills:</h3>
+            <ul>
+                <li>C# with .NET</li>
+                <li>JavaScript with AngularJS & Ember.js</li>
+                <li>HTML & CSS</li>
+                <li>Microsoft SQL Server</li>
+                <li>Github</li>
+                <li>Pair Programming</li>
+            </ul>
+        </div>
     </div>
    </div>
 </body>

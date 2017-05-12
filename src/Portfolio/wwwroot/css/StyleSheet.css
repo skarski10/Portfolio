@@ -5,6 +5,13 @@
     -o-background-size: cover;
     background-size: cover;
 }
+#landing {
+    background: url('/img/Skarbek_2016-9.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #about-heading {
     text-align: center;
     font-size: 50px;
@@ -40,7 +47,6 @@ background: #000;
     left: 0;
     top: 0;
 }
-}
 #header #nav li a {
     text-decoration: none;
     color: #FFF;
@@ -55,4 +61,29 @@ ul, ol, dl {
     line-height: 1.6;
     list-style-position: outside;
     font-family: inherit;
+}
+.footer {
+    text-align: center;
+    position: fixed;
+    width: inherit;
+    height: 5vh;
+    bottom: 0;
+
+    background-color: white;
+}
+footer {
+    margin-top: 50vh;
+}
+.projects{
+    text-align: center;
+    font-family: 'Ravi Prakash', cursive;
+}
+#about{
+    font-family: 'Inknut Antiqua', serif;
+}
+.info {
+    background-color: rgba(220, 229, 242, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Inknut Antiqua', serif;
 }
