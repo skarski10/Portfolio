@@ -1,19 +1,71 @@
-﻿#projects-body {
-    background: url('/img/IMG_5592.JPG') no-repeat center center fixed; 
+﻿#landing {
+    background: url('/img/SkarbekFamily.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+#landing-page {
+    padding: 40px;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+.image-links {
+    position: relative;
+    width:  100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+#projects-body {
+    background: url('/img/FarmKitchen.JPG') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.projects{
+    text-align: center;
+    font-family: 'Ravi Prakash', cursive;
+    padding-top: 25px;
+    text-shadow: 2px 2px 2px black;
+}
+#projects-heading {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 50px;
+}
+#projects-page {
+    padding: 40px;
+    font-family: 'Ravi Prakash', cursive;
+    text-align: center;
+    text-shadow: 1px 1px 1px 1px gray;
+}
+#contact-body {
+    background: url('/img/PriestLake.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#contact-heading, h2 {
+    text-align: center;
+    font-size: 50px;
+}
+#contact-page {
+    padding: 40px;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+.contact-info{
+    padding: 25px;
 }
 #about-body {
     background: url('/img/FamilyPortrait.png') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#landing {
-    background: url('/img/Skarbek_2016-9.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -23,40 +75,10 @@
     text-align: center;
     font-size: 50px;
 }
-li {
-    padding: 10px;
-}
-#logo {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 28px;
-}
-#header #nav li a {
-    text-decoration: none;
-    color: #FFF;
-    line-height: 70px;
-    text-transform: uppercase;
-}
-.projects{
-    text-align: center;
-    font-family: 'Ravi Prakash', cursive;
-    padding-top: 25px;
-}
-#projects-heading {
-    margin-top: 25px;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Ravi Prakash', cursive;
-}
-.info {
-    background-color: rgba(220, 229, 242, 0.8);
-    padding: 10px;
-    border-radius: 10px;
+#about-page {
+    padding: 40px;
     font-family: 'Inknut Antiqua', serif;
-    margin-top: 10px;
+    text-shadow: 2px 2px 2px black;
 }
 .picture {
   -webkit-transition: all 0.5s ease;
@@ -96,24 +118,37 @@ li {
   font: 400 18px/1 'Kaushan Script', cursive;
   color: #888;
 }
-#about-page {
-    padding: 40px;
-    font-family: 'Inknut Antiqua', serif;
+
+li {
+    padding: 10px;
 }
+#logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+}
+#header #nav li a {
+    text-decoration: none;
+    color: #FFF;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.info {
+    background-color: rgba(220, 229, 242, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Inknut Antiqua', serif;
+    margin-top: 10px;
+}
+
 .bg-faded {
     background-color: rgba(220, 229, 242, 0.8);
 }
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 body {
-  position: relative;
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
@@ -136,7 +171,4 @@ a {
 }
 .links {
     text-transform: uppercase;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }

@@ -5,16 +5,17 @@
 @model IEnumerable<Portfolio.Models.Project>
 
 <body id="projects-body">
-    <div class="container info">
-        <div id="row projects-heading">
+    <div class="container info" id="projects-page">
+        <div class="row" id="projects-heading">
             <h2>My Projects:</h2>
         </div>
-        <div>
+        <hr />
+        <div class="row">
             @foreach (var project in Model)
             {
                 if (project.stargazers_count > 0)
                 {
-                    <div class="projects">
+                    <div class="row projects">
                         <h3>@project.name</h3>
                         <h5><a href=@project.html_url>@project.html_url</a></h5>
                     </div>

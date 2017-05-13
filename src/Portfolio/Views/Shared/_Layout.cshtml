@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="~/js/JavaScript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
@@ -19,23 +20,23 @@
 <body>
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="nav-id">
         <div class="collapse navbar-collapse" id="header">
-            <ul class="navbar-nav mr-auto" id="links-left">
+            <ul class="navbar-nav mr-auto">
                 <li>
                     <span id="logo">@Html.ActionLink("Kory Skarbek", "Index", "Home")</span>
                 </li>
                 <li class="links">
                         <span>@Html.ActionLink("Home", "Index", "Home")</span>
                 </li>
-                <li>
-                    <span class="links">@Html.ActionLink("About", "AboutMe", "Home")</span>
+                <li class="links">
+                    <span>@Html.ActionLink("About", "AboutMe", "Home")</span>
                 </li>
             </ul>
-            <ul class="navbar-nav justify-content-end" id="links-rights">
+            <ul class="navbar-nav justify-content-end">
                 <li class="links">
                     <span>@Html.ActionLink("Projects", "MyProjects", "Home")</span>
                 </li>
-                <li>
-                    <span class="links">@Html.ActionLink("Contact Me", "ContactInfo", "Home")</span>
+                <li class="links">
+                    <span>@Html.ActionLink("Contact Me", "ContactInfo", "Home")</span>
                 </li>
             </ul>
         </div>

@@ -13,14 +13,18 @@ namespace Portfolio.Controllers
         {
             return View();
         }
-        public IActionResult AboutMe()
-        {
-            return View();
-        }
         public IActionResult MyProjects()
         {
             List<Project> staredProjects = Project.GetProjects();
             return View(staredProjects);
+        }
+        public IActionResult AboutMe()
+        {
+            return View();
+        }
+        public IActionResult ContactInfo()
+        {
+            return View();
         }
     }
 }
