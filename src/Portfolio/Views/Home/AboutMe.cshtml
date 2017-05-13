@@ -3,44 +3,53 @@
     ViewBag.Title = "About";
 }
 <body id="about-body">
-   <div class="container">
+   <div class="container info" id="about-page">
     <div class="row" id="about">
-        <p id="about-heading">About Me:</p>
-        <div class="info row">
+        <h2 id="about-heading">About Me:</h2>
+        <hr />
+        <div class="row">
             <div class="col-md-6">
-                <div class="col-md-6">
-                    <p>
-                        I am currently a junior level program developer studying at Epicodus code school in Seattle. At Epicodus, I learned C# with .NET framework and JavaScript with Angular. I am open to learning any language and enjoy the challenge it provides. I love programming because of the challenges it presents and the different solutions there can be so solving them.
-                    </p>
+                <div class="picture">
+                    <img src="~/img/Kory.jpg" id="picture" />                
                 </div>
+            </div>
+            <div class="col-md-6">                
+                <p>
+                    I am currently a junior level program developer studying at Epicodus code school in Seattle. At Epicodus, I learned C# with .NET framework and JavaScript with Angular and Ember. I am open to learning any language and enjoy the challenge it provides. I love programming because of the challenges it presents and the different solutions there can be to solving them.
+                </p>
+                <p>
+                    I have a BS in Business Administration from the University of Redlands. Before I started learning web development at Epicodus, I work for a small manufacturing company in Bend, Oregon. 
+                </p>
             </div>
         </div>
     </div>
        <hr />
-    <div class="row info">
-        <div class="col-md-6" id="Education">
-            <h3>Education:</h3>
-            <h4>Epicodus, Seattle, WA</h4>
-            <p>
-                <em>2017</em><br />
-                Six month vocational school for programming
-            </p>
-            <h4>University of Redlands, Redlands, CA - BS - Business Administration</h4>
-            <p>
-                <em>2013</em>
-            </p>               
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="Education">
+                <h3>Education:</h3>
+                <h4>Epicodus, Seattle, WA</h4>
+                <p>
+                    <em>2017</em><br />
+                    Six month vocational school for programming
+                </p>
+                <h4>University of Redlands, Redlands, CA - BS - Business Administration</h4>
+                <p>
+                    <em>2013</em>
+                </p>               
+            </div>
+            <div class="col-md-6" id="skills">
+                <h3>Skills:</h3>
+                <ul>
+                    <li>C# with .NET</li>
+                    <li>JavaScript with AngularJS & Ember.js</li>
+                    <li>HTML & CSS</li>
+                    <li>Microsoft SQL Server</li>
+                    <li>Github</li>
+                    <li>Pair Programming</li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-6" id="skills">
-            <h3>Skills:</h3>
-            <ul>
-                <li>C# with .NET</li>
-                <li>JavaScript with AngularJS & Ember.js</li>
-                <li>HTML & CSS</li>
-                <li>Microsoft SQL Server</li>
-                <li>Github</li>
-                <li>Pair Programming</li>
-            </ul>
-        </div>
+       </div>
     </div>
-   </div>
 </body>

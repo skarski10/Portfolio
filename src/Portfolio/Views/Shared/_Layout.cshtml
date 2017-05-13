@@ -37,17 +37,27 @@
 </body>
 </html>
 <div class="container">
-    <footer>
+    <footer class="footer">
     <hr />
-    <div class="footer">
+    <div>
         @if (User.Identity.IsAuthenticated)
         {
-            <p> @Html.ActionLink("Log Out", "LogOff", "Account")</p>
+            <ul class="list-inline">
+                <li>
+                    @Html.ActionLink("Log Out", "LogOff", "Account")
+                </li>
+            </ul>
         }
         else
         {
-            <p>@Html.ActionLink("Register", "Register", "Account")</p>
-            <p>@Html.ActionLink("Login", "Login", "Account")</p>
+            <ul class="list-inline">
+                <li>
+                    @Html.ActionLink("Register", "Register", "Account")
+                </li>
+                <li>
+                   @Html.ActionLink("Login", "Login", "Account")
+                </li>
+            </ul>
         }
     </div>
     </footer>
