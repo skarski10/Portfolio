@@ -8,6 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="~/js/JavaScript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
     <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-icon">
@@ -15,19 +17,26 @@
     <link rel="stylesheet" href="~/css/StyleSheet.css" />
 </head>
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <span id="logo">@Html.ActionLink("Kory Skarbek", "Index", "Home")</span>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li id="about">
-                        <span>@Html.ActionLink("About", "AboutMe", "Home")</span>
-                    </li>
-                    <li>
-                        <span id="projects">@Html.ActionLink("Projects", "MyProjects", "Home")</span>
-                    </li>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="nav-id">
+        <div class="collapse navbar-collapse" id="header">
+            <ul class="navbar-nav mr-auto" id="links-left">
+                <li>
+                    <span id="logo">@Html.ActionLink("Kory Skarbek", "Index", "Home")</span>
+                </li>
+                <li class="links">
+                        <span>@Html.ActionLink("Home", "Index", "Home")</span>
+                </li>
+                <li>
+                    <span class="links">@Html.ActionLink("About", "AboutMe", "Home")</span>
+                </li>
+            </ul>
+            <ul class="navbar-nav justify-content-end" id="links-rights">
+                <li class="links">
+                    <span>@Html.ActionLink("Projects", "MyProjects", "Home")</span>
+                </li>
+                <li>
+                    <span class="links">@Html.ActionLink("Contact Me", "ContactInfo", "Home")</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -36,29 +45,19 @@
     </div>
 </body>
 </html>
-<div class="container">
-    <footer class="footer">
-    <hr />
-    <div>
-        @if (User.Identity.IsAuthenticated)
+<div class="footer">
+    @if (User.Identity.IsAuthenticated)
         {
-            <ul class="list-inline">
-                <li>
-                    @Html.ActionLink("Log Out", "LogOff", "Account")
-                </li>
-            </ul>
-        }
-        else
-        {
-            <ul class="list-inline">
-                <li>
-                    @Html.ActionLink("Register", "Register", "Account")
-                </li>
-                <li>
-                   @Html.ActionLink("Login", "Login", "Account")
-                </li>
-            </ul>
-        }
-    </div>
-    </footer>
+        <div class="login-register">
+            @Html.ActionLink("Log Out", "LogOff", "Account")
+        </div>
+    }
+    else
+    {
+        <div class="login-register">
+            @Html.ActionLink("Register", "Register", "Account")
+            @Html.ActionLink("Login", "Login", "Account")
+        </div>
+
+    }
 </div>
